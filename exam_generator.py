@@ -137,7 +137,6 @@ def generate_single_exam_latex(exam_data, exam_number, header_map, image_path):
             text_part = ' '.join([p for p in parts if not p.lower().endswith(('.jpg', '.png', '.jpeg'))])
             image_files = [p for p in parts if p.lower().endswith(('.jpg', '.png', '.jpeg'))]
 
-            # Use \mbox{}\\ to put label on its own line:
             latex_body += "\\item \\mbox{}"
 
             if image_files:
@@ -208,7 +207,6 @@ def main():
             print(f"  - Error writing to file '{tex_filename}': {e}")
             continue
 
-        # Compile LaTeX to PDF using pdflatex in the bin folder
         try:
             print(f"  - Compiling LaTeX to PDF...")
             subprocess.run(
