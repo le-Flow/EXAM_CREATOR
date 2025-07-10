@@ -1,0 +1,130 @@
+
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage[a4paper, margin=1in]{geometry}
+\usepackage{fancyhdr}
+\usepackage{tabularx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{titling}
+
+% --- Customization ---
+\renewcommand{\familydefault}{\sfdefault}
+
+% Setup for headers and footers
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{Fakultät Informatik}
+\fancyhead[R]{Klausur: Rechnerarchitekturen}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+% Set the path where LaTeX will look for the images
+\graphicspath{{C:/Users/adamw/AppData/Roaming/Anki2/User 1/collection.media/}}
+
+% Customize section titles
+\titleformat{\section}{\normalfont\Large\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\normalfont\large\bfseries}{}{0em}{}
+
+% --- Title Page Definition ---
+\pretitle{\begin{center}\Huge\bfseries}
+\posttitle{\end{center}}
+\preauthor{}
+\postauthor{}
+\predate{}
+\postdate{}
+
+\title{Übungsklausur Rechnerarchitekturen \\ \large Klausurvariante 1}
+\author{}
+\date{\today}
+
+\begin{document}
+
+% --- Title Page ---
+\begin{titlepage}
+    \maketitle
+    \vspace{0.5cm}
+    \centering
+    \begin{tabularx}{0.9\textwidth}{lX}
+        \hline\hline \\
+        \textbf{Prüfungsfach:} & Rechnerarchitekturen \\
+        \textbf{Semester:} & Platzhalter-Semester \\
+        \textbf{Prüfungsdauer:} & 90 Minuten \\
+        \textbf{Maximale Punktzahl:} & 90 Punkte \\
+        \textbf{Erlaubte Hilfsmittel:} & Taschenrechner \\
+        \hline\hline
+    \end{tabularx}
+    \vspace{2.5cm}
+    \begin{tabularx}{0.9\textwidth}{lX}
+        \textbf{Name:} & \dotfill \\
+        \\
+        \textbf{Matrikelnummer:} & \dotfill \\
+        \\
+        \textbf{Unterschrift:} & \dotfill \\
+    \end{tabularx}
+    \vfill
+    {\Large Viel Erfolg!}
+\end{titlepage}
+\clearpage
+\subsection*{Aufgabe 1: Leistung, Compiler und CPI}
+
+\begin{enumerate}[label=\alph*), topsep=5pt, itemsep=10pt]
+\item \mbox{}\begin{center}\includegraphics[width=0.9\linewidth, height=0.6\textheight, keepaspectratio]{paste-e2692ffda48b05a2b635de2ec768b0e52dd9cbf9.jpg}
+\end{center}
+\item \mbox{}\begin{center}\includegraphics[width=0.9\linewidth, height=0.6\textheight, keepaspectratio]{paste-257de13a92023d70c793be793455bd5ba22bf63d.jpg}
+\includegraphics[width=0.9\linewidth, height=0.6\textheight, keepaspectratio]{paste-9c99002395b38ec49ee499a2a253ebceb2db32ce.jpg}
+\end{center}
+\end{enumerate}
+\clearpage
+\subsection*{Aufgabe 2: MIPS}
+
+\begin{enumerate}[label=\alph*), topsep=5pt, itemsep=10pt]
+\item \mbox{}\begin{center}\includegraphics[width=0.9\linewidth, height=0.6\textheight, keepaspectratio]{paste-596e7d677eb4444bd9ba79a66b425eefc9ce0636.jpg}
+\end{center}
+\item \mbox{}\begin{center}\includegraphics[width=0.9\linewidth, height=0.6\textheight, keepaspectratio]{paste-d83f8fcf19bddd621fdaf4dd922a4aa6ec3525ec.jpg}
+\end{center}
+\item \mbox{}\begin{center}\includegraphics[width=0.9\linewidth, height=0.6\textheight, keepaspectratio]{paste-8788a01a81d6499b004da1fb7c597aedf5938969.jpg}
+\end{center}
+\item \mbox{}\begin{center}\includegraphics[width=0.9\linewidth, height=0.6\textheight, keepaspectratio]{paste-263c4ebdfd42eca54d15fa105e7f1d0ccbd3a1f2.jpg}
+\end{center}
+\item \mbox{}\begin{center}\includegraphics[width=0.9\linewidth, height=0.6\textheight, keepaspectratio]{paste-325b86181731f40f5e7905dd8a65c8707f60ced6.jpg}
+\end{center}
+\end{enumerate}
+\clearpage
+\subsection*{Aufgabe 3: Arithmetik}
+
+\begin{enumerate}[label=\alph*), topsep=5pt, itemsep=10pt]
+\item \mbox{}\begin{center}\includegraphics[width=0.9\linewidth, height=0.6\textheight, keepaspectratio]{paste-a30a41756afd636461a2b80aac0eddd5a4b8fda1.jpg}
+\end{center}
+\item \mbox{}\begin{center}\includegraphics[width=0.9\linewidth, height=0.6\textheight, keepaspectratio]{paste-c29c5b70c4331aa09214e621fd77ab204d73634b.jpg}
+\end{center}
+\item \mbox{}\begin{center}\includegraphics[width=0.9\linewidth, height=0.6\textheight, keepaspectratio]{paste-32d038793e342bca679a0bd7066651816b2a1d14.jpg}
+\end{center}
+\end{enumerate}
+\clearpage
+\subsection*{Aufgabe 4: Pipelining}
+
+\begin{enumerate}[label=\alph*), topsep=5pt, itemsep=10pt]
+\item \mbox{}\begin{center}\includegraphics[width=0.9\linewidth, height=0.6\textheight, keepaspectratio]{paste-095e68eaa5a036e9093c2b59046dcfa710c3021f.jpg}
+\includegraphics[width=0.9\linewidth, height=0.6\textheight, keepaspectratio]{paste-903668c6193de52f5fc109dda8ee26734b07717e.jpg}
+\end{center}
+\end{enumerate}
+\clearpage
+\subsection*{Aufgabe 5: Caching}
+
+\begin{enumerate}[label=\alph*), topsep=5pt, itemsep=10pt]
+\item \mbox{}\begin{center}\includegraphics[width=0.9\linewidth, height=0.6\textheight, keepaspectratio]{paste-57e4315726ab712fc0faa0db81a1c2ef6ca326ce.jpg}
+\includegraphics[width=0.9\linewidth, height=0.6\textheight, keepaspectratio]{paste-f72b3d9f570173d121940c4d04565a7fd0c98a29.jpg}
+\includegraphics[width=0.9\linewidth, height=0.6\textheight, keepaspectratio]{paste-a331f2fde890a6ca1979e930084324d050ad6cc5.jpg}
+\end{center}
+\item \mbox{}\begin{center}\includegraphics[width=0.9\linewidth, height=0.6\textheight, keepaspectratio]{paste-78caae57019647b3a73e7ccccf7791e48e0b1ad2.jpg}
+\includegraphics[width=0.9\linewidth, height=0.6\textheight, keepaspectratio]{paste-8ea16b2ad554cd2c398e35d08c4a5c8d83ed21f7.jpg}
+\end{center}
+\end{enumerate}
+\clearpage
+
+\end{document}
