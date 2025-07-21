@@ -1,0 +1,264 @@
+{
+  "Arithmetik (deck id 1752947861886)": [
+    {
+      "front": "Was sind die Sonderformate bei IEEE paste-482d34e156054e8aaf771e7cb828079a163a6162.jpg ",
+      "back": "<img src=\"paste-e546f6f9223c0060b86f427b68d057c2714a4f4c.jpg\">"
+    },
+    {
+      "front": "Was ist die Vorzeichenbetrags schreibweise?",
+      "back": "MSB 0 oder 1 gibt vorzeichen an"
+    },
+    {
+      "front": "Wie funktioniert die Zweierkomplementdarstellung?",
+      "back": "<ul><li><div>Negative Zahlen werden durch Invertieren aller Bits und Addieren von&nbsp;<code>1</code>&nbsp;gebildet.</div></li></ul>"
+    }
+  ],
+  "Cache (deck id 1752949544127)": [
+    {
+      "front": "Welche auswirkung hat die änderung der Cachegröße?",
+      "back": "<img src=\"paste-52aa681805989637bef14a9adcb1fd4b62284933.jpg\">"
+    },
+    {
+      "front": "Welche auswirkung hat die änderung der Assozivität auf den Cache?",
+      "back": "<img src=\"paste-aa60f5de04d6cc29d91f138c9ad5c49e1f0e3858.jpg\">"
+    },
+    {
+      "front": "Wie berechnet sich der Offset?",
+      "back": "Offset-Größe&nbsp;(Bits)=log2​(Blockgröße&nbsp;in&nbsp;Bytes)"
+    },
+    {
+      "front": "Wie berechnet sich die gesamtgröße des Cache?",
+      "back": "Cache-Größe&nbsp;(Bytes)&nbsp;= Anzahl&nbsp;der&nbsp;Blöcke × Blockgröße&nbsp;(Bytes)<br>Anzahl&nbsp;der&nbsp;Blöcke = Anzahl&nbsp;der&nbsp;Sets × Assoziativität&nbsp;(Blöcke&nbsp;pro&nbsp;Set)"
+    },
+    {
+      "front": "Wie funktioniert Write Through und wie kann man seine Probleme fixen?",
+      "back": "Speicher immer direkt mit aktualiseren<br>Aber Schreibzugriffe deswegen immer sehr langsam&nbsp;<br>-&gt; Write bufffer und erst schreiben wenn Write Buffer voll ist"
+    },
+    {
+      "front": "Wie berechnet sich die Anzahl der Seitentabellen einträge bei Virtuellem Speicher?",
+      "back": "Anzahl&nbsp;PTEs = Virtueller&nbsp;Adressraum​ / Seitengröße&nbsp;=2^(Adressgröße−Offset-Bits)"
+    },
+    {
+      "front": "Was ist der unterschied zwischen Cache Kohärenz und Konsistenz?",
+      "back": "Kohärenz:&nbsp;<em>Wann muss ein Wert aktualisiert/invalidiert werden?<br></em>Konsistenz:&nbsp;<em>In welcher Reihenfolge müssen Schreib-/Lesezugriffe sichtbar sein?</em>"
+    },
+    {
+      "front": "Wie berechnet sich der Index?",
+      "back": "log₂(Anzahl der Cache-Blöcke)"
+    },
+    {
+      "front": "Wie funktioniert Write-Back?",
+      "back": "Speicher wird nur aktuallisiert wenn ein block mit dirty bit evicted wird. Dirty bit wird bei einem Cache write gesetzt. Benötigt verwaltungslogic aber ist schneller als write through."
+    },
+    {
+      "front": "Wie berechnet sich die Größe des virtuellen Adressraumes?",
+      "back": "Virtueller&nbsp;Adressraum&nbsp;(Bytes)=2^Adressgröße(bits)"
+    },
+    {
+      "front": "Wie berechnet sich die größe einer Seitentabelle?",
+      "back": "Seitentabellen-Größe&nbsp;(Bytes)=Anzahl&nbsp;Einträge × Größe Einträge"
+    },
+    {
+      "front": "Welche auswirkung hat die änderung der Blockgröße?",
+      "back": "<img src=\"paste-dd1a2a0dd7a347c2eed2eae5dc44051c5f5f2693.jpg\">"
+    },
+    {
+      "front": "Was für Kohärenz Protokolle gibt es ud was machen diese?",
+      "back": "Snooping Protokolle: Alle Caches \"lauschen\" auf Bus-Transaktionen.<br>Verzeichisbasiert: Zentrale Tabelle (\"Directory\") trackt Cache-Zustände."
+    },
+    {
+      "front": "Was sind Synchronisatiosnprotokolle bei Kohärenz und was machen diese?",
+      "back": "Write Invalidate:<br><ul><li><div>Wenn ein Kern in eine gemeinsame Speicheradresse schreibt, werden&nbsp;<strong>alle anderen Cache-Kopien invalidiert</strong>.</div></li><li><div>Andere Kerne müssen bei ihrem nächsten Lesezugriff die&nbsp;<strong>aktualisierten Daten neu anfordern</strong>.</div></li></ul>Write Update/Broadcast:&nbsp;<br><ul><li><div>Bei einem Schreibzugriff wird der&nbsp;<strong>neue Wert an alle anderen Caches gesendet</strong>.</div></li><li><div>Diese&nbsp;<strong>aktualisieren ihre Kopien sofort</strong>.</div></li></ul>"
+    }
+  ],
+  "Formeln (deck id 1752918610897)": [
+    {
+      "front": "Formel Leistung",
+      "back": "Durchsatz<br><ul><li><img src=\"paste-31612544070a73612f9618d14b5ebe760f8695e2.png\"></li></ul>X ist n mal schneller als z<br><ul><li><img src=\"paste-4341b52475487a5b4592db87f443f234795f6414.png\"><br></li></ul>"
+    },
+    {
+      "front": "Amdahls Gesetz",
+      "back": "\n<div>\n<div>\n<ul><li><img src=\"paste-b6e2ac8ac294fb99daeb244fdc55ff722445498d.png\"></li>\n</ul>\n<div>&nbsp;&nbsp;&nbsp;&nbsp; F = Anteil des\nProgrammes</div>\n</div>\n</div>"
+    },
+    {
+      "front": "Pipeline Speedup",
+      "back": "\n<div>\n<div><div><img src=\"paste-7b1362ab26cdf54800d33f8af8afb80a7529830f.png\"></div></div>\n</div>"
+    },
+    {
+      "front": "Formel CPU-Zeit",
+      "back": "<div><div><span style=\"font-weight:bold\">CPU-Zeit:</span></div><ul><li>Vergangene Zeit</li><li><img src=\"paste-b28696c03e7c11183e34556ca98125c3ed096d1a.png\"></li><li><img src=\"paste-5dbad43fd747e8c9c4be96baf95a1c202e8e600e.png\"></li><li><img src=\"paste-b9481aee4a13a804708d2667cf58e84599dcb228.png\"></li></ul></div>"
+    },
+    {
+      "front": "Speedup Amdahls Gesetz",
+      "back": "<ul>\n<li><img src=\"paste-7f166079fc08fc0c3becad43339a6fe1fcf1969e.png\"></li>\n</ul>\n<div>&nbsp;&nbsp;&nbsp;&nbsp; F = Anteil des\nProgrammes</div>"
+    },
+    {
+      "front": "Formel CPI",
+      "back": "<div>Cycles per Instruction</div><ul><li><img src=\"paste-9142f4cda9dcccd4687b294ca112de3b56efcac7.png\"></li></ul>"
+    },
+    {
+      "front": "Formel Memory stall cycles",
+      "back": "<img src=\"paste-e1eeb5a5f379957f365c79fc17a439efb0d788af.jpg\">"
+    },
+    {
+      "front": "AMAT",
+      "back": "<div>AMAT = Hit&nbsp;Rate * Hit Time + Miss rate * Miss penalty</div>"
+    },
+    {
+      "front": "Anzahl CPU Taktzyklen",
+      "back": "<div><img src=\"paste-fa691d4145854c1b97e63bc0ba7afe11292358d4.png\"></div>"
+    },
+    {
+      "front": "MTBF",
+      "back": "<div>MTBF = MTTF + MTTR</div>"
+    },
+    {
+      "front": "Verfügbarkeit ",
+      "back": "<div>MTTF/(MTTF+MTTR)</div>"
+    },
+    {
+      "front": "Anual Failure Rate",
+      "back": "<img src=\"paste-cb483250dee1bf186a71eb498b95633484584865.jpg\">"
+    }
+  ],
+  "Generel (deck id 1752918998750)": [
+    {
+      "front": "Was versteht man unter Kontrollpfad",
+      "back": "Kontrolliert den Datenpfad und gibt an, wann was gemacht wird."
+    },
+    {
+      "front": "Was besagt Moores law",
+      "back": "<ul>\n<li>Anzahl der<span style=\"font-weight: bold;\">\n     Transistoren pro Chips</span> verdoppelt sich ca. alle 18 Monate </li>\n<li>-&gt;\n     Logaritmischer Wachstum </li>\n<li>Gilt\n     immernoch (Nicht verwechseln mit Leistungswachstum)</li></ul>"
+    },
+    {
+      "front": "Was versteht man unter der Powerwall?",
+      "back": "<ul>\n<li>Mit höherer Taktfrequence wird die Wärmedichte immer\n     höher</li>\n<li>-&gt; Mehr Kühlung benötigt</li>\n<li>Blockiert die erhöhung der Taktfrequenz</li>\n<li>-&gt; Lösung: Multiprozessoren</li></ul>"
+    },
+    {
+      "front": "Was besagt Amdahls Gesetz?",
+      "back": "<ul><li>Manerwartet proportionale Verbesserung der Gesamtleistung bei Verbesserung<br>     eines Computeraspektes</li><ul><li>Verbesserung wird nur dort spürbar wo sie angewendet wird → Make the common case fast</li></ul><li>Gesamtleistung ist immer von unveränderten Teil begrenzt</li></ul>"
+    },
+    {
+      "front": "Was versteht man unter Datenpfad",
+      "back": "Die Strecke über die in der Hardware benötigten Bausteine"
+    },
+    {
+      "front": "Was versteht man unter kritischer Pfad",
+      "back": "Der kritische Pfad ist die längste Abfolge an vorgängen. DIese bestimmt die maximale Taktfrequenz."
+    }
+  ],
+  "Mips (deck id 1752946846333)": [
+    {
+      "front": "Wie ist das R-Format aufgebaut mit nutzen und erklärung",
+      "back": "Für Register\n     befehle<br><img src=\"paste-1714d21d3b43e82b1c7d7f7070900855a4e68184.png\"><br><br><ul>\n<li>Op =\n     operation code (R-Format, S-Format…)</li>\n<li>Rs = first\n     source Register</li>\n<li>Rt = second\n     source Register</li>\n<li>Rd =\n     Destiation register</li>\n<li>Shamt =\n     shift amount (sll, srl)</li>\n<li>Funct =\n     function code (add, sub…)</li>\n<li>Immediate =\n     Zahlwert</li></ul>"
+    },
+    {
+      "front": "Was sind die drei Adressierungsformate in der Mips?",
+      "back": "R-Format<br>I-Format<br>Pseudo direkte Sprungadressierung"
+    },
+    {
+      "front": "Wie ist das I-Format aufgebaut mit nutzen und erklärung?",
+      "back": "<ul><li>Für Immediate und branch befehle</li><li><div><img src=\"paste-645fbe3611f0c2c26d67017ba5c9199d166a7be3.jpg\"><br></div></li><li>Für PC relative Jumps (PC = PC + Immediate * 4)</li></ul>"
+    },
+    {
+      "front": "Wie ist die Pseudo direkte Sprungadressierung aufgebaut mit nutzen und erklärung?",
+      "back": "<ul>\n<li>Springe zu\n     einer bestimmten addresse</li>\n<li>Wird für J\n     und Jal benutzt</li>\n<li><img src=\"paste-b54a0ef17bb9ae81230a9185977815cde1fffd68.png\"></li>\n<li>PC = address\n     * 4</li></ul>"
+    },
+    {
+      "front": "Was sind die vier Entwurfsprinzipien einer ISA mit erklärung?",
+      "back": "<span style=\"font-weight: bold;\">Einfachheit begünstigt\n     Regelmäßigkeit<br></span>&nbsp; &nbsp;&nbsp;- Regelmäßigkeit\n      macht Implementierung einfacher<br>&nbsp; &nbsp;&nbsp;- Einfachheit\n      ermöglicht höhere CPU Leistung<br>\n<span style=\"font-weight: bold;\">Kleiner ist schneller<br></span>&nbsp; &nbsp;&nbsp;- Weniger\n      suchzeit bei kleinen Speichern -&gt; kleiner Register/Cache<br><span style=\"font-weight: bold;\">Make common case fast<br></span>&nbsp; &nbsp;&nbsp;- Kleine\n      Konstanten sind häufig<br>&nbsp; &nbsp;&nbsp;- Immediate\n      Befehle erlauben load zu vermeiden<br><span style=\"font-weight: bold;\">Good design demands good compromises<br></span>&nbsp; &nbsp; - Verschiedene\n      Formate komplizieren Decodierung aber erlauben überall 32 bit Befehle<ol><ul>\n</ul></ol>"
+    }
+  ],
+  "Multiprozessoren (deck id 1753026953044)": [
+    {
+      "front": "Was ist mit starker und schwacher Skalierung gemeint und wodurch sind diese begrenzt (mit formel)?",
+      "back": "<strong>1. Starke Skalierung (Strong Scaling)</strong><ul><li><div><em>Wie schnell löst man ein&nbsp;<strong>festes Problem</strong>, wenn man mehr Prozessoren/Kerne hinzufügt?</em></div></li><li><div><div><b>Grenzen</b>:&nbsp;Kommunikations-Overhead, Amdahls Gesetz.</div></div></li><li>Speedup = T<sub>1</sub>/T<sub>N&nbsp;</sub></li><li>T<sub>1</sub>​&nbsp;= Zeit auf 1 Kern,&nbsp;T<sub>N&nbsp;</sub>= Zeit auf&nbsp;N&nbsp;Kernen</li></ul><div><strong>2. Schwache Skalierung (Weak Scaling)</strong><ul><li><div><em>Wie viel größeres Problem kann man lösen, wenn man mehr Prozessoren/Kerne hinzufügt?</em></div></li><li><div><strong>Grenzen:</strong>&nbsp;Speicherbandbreite, Lastverteilung.</div></li><li>Effizienz = Problemgröße&nbsp;pro&nbsp;Kern / Gesamtzeit<br></li></ul></div>"
+    },
+    {
+      "front": "Was ist Summenreduktion und wie funnktioniert diese?",
+      "back": "Ein Algorithmus, um eine&nbsp;Summe von Werten&nbsp;in einem Array parallel (z. B. auf GPU/CPU) effizient zu berechnen. <br>Dafür benötigt man einen SMP (Shared Memory multiprocessor)<br>Hier werden z.B. immer zweierpaare an werten Addiert und danach wieder das selbe, bis nurnoch ein wert übrig ist<br><img src=\"paste-acbdbbac56812aa9778174abe72029c21ee0a26d.jpg\">"
+    }
+  ],
+  "Pipeline (deck id 1752948565849)": [
+    {
+      "front": "Welche formate benutzen welche Teile der Pipeline?",
+      "back": "R-Format: IF ID(2 registerwerte lesen) EX(ALU) WB(Ergebnis schreiben)<br>I-Format: IF ID(registerwert lesen) EX(Adresse aus 16-bit Offset berechnen) MEM(load oder store) WB(nur bei load)<br>J-Format: IF ID(registerwerte lesen) EX(vergleich bei branch und zieladresse berechnen)&nbsp;&nbsp;"
+    },
+    {
+      "front": "Was sind die Pipeline schritte in der Mips?",
+      "back": "<ol>\n<li><span style=\"font-weight: bold;\">IF</span>: Instruction Fetch vom Speicher</li>\n<li><span style=\"font-weight: bold;\">ID</span>:\n     Instruction Decode &amp; Register lesen</li>\n<li><span style=\"font-weight: bold;\">EX</span>:\n     Execute Befehl ausführen oder Adresse ausrechnen</li>\n<li><span style=\"font-weight: bold;\">MEM</span>:\n     Zufriffe auf den Speicheroperanden</li>\n<li><span style=\"font-weight: bold;\">WB</span>:\n     Write back (Ergebnis in Register schreiben)</li></ol>"
+    },
+    {
+      "front": "Was gibt es für Pipeline Konflikte und wie kann man diese lösen?",
+      "back": "1. Strukturkonflikt (Eine\nbenötigte Ressource ist belegt)<br><div><ul><li>-&gt; Datenpfade mit Pipelining erfordern\ngetrennte Befehls- und Datenspeicher</li></ul></div>2. Datenkonflikt (Müssen warte, das vorherige Befehle das\nLesen/Schreiben von Daten abschliesst)<br><ul><li><div>-&gt; Forwarding, bei Load-Use mit stall oder code scheduling</div></li></ul><div>3. Steuerkonflikt (Steuerentscheidung hängt vom vorherigen\nBefehl ab)</div><div><ul><li>-&gt; Delayed branch slot, branch prediction</li></ul></div>"
+    },
+    {
+      "front": "Was ist der unterschied zwischen Statischer und dynamischer branch prediction?",
+      "back": "<ul>\n<li><span style=\"font-weight: bold;\">Statische Sprungvorhersage:</span></li>\n<ul>\n<li>Basierend\n      auf typischem Sprungverhalten (Festgelegte Regeln)</li>\n</ul>\n<li><span style=\"font-weight: bold;\">Dynamische Sprungvorhersage:</span></li>\n<ul>\n<li>Hardware\n      misst tatsächliches Sprungverhalten (z.B. durch speichern der letzten\n      Sprünge für jeden Branch)</li>\n<li>-&gt;\n      Annahme: Zukünftiges Verhalten setzt Trend fort</li>\n<li>Wenn\n      falsch, stall während erneuten Befehlsladens und Aktualisierung der\n      Branch history table</li>\n</ul></ul>"
+    },
+    {
+      "front": "Wozu dient die in Prozessoren Sprungvorhersage und warum wurde sie entwickelt? Erklären Sie die zwei grundlegenden Alternativen Sprungvorhersage zu realisieren. Erklären Sie im Detail was in beiden Alternativen bei einem Sprungbefehl passiert und welche Prozessorressourcen dafür benötigt werden.",
+      "back": "<div>Die Sprungvorhersage trifft eine Vorhersage ob ein Sprung genommen wird oder nicht genommen wird.</div><div><ul><li>(1) Sie dient dazu, Pipelineverzögerungen zu vermeiden die entstehen, wenn der nächste Befehl nicht zum Dekodieren bereit steht – der Grund, weshalb sie entwickelt wurde.</li><li>(2) Bei der statischen Vorhersage wird immer eine Richtung gewählt, z.b. für back brahöhes ein taken für forward branches ein not-taken. Es ist dazu keine weitere Ressource benötigt, da der Compiler (oder Assemblerprogrammierer) ein Vorhersagbit setzt.</li><li>(2) Bei der dynamischen Vorhersage wird die Befehlsadresse als Index in eine Branch History Table verwendet. Der Zustand des 1 Bit oder 2 Bit oder komplizierteren Predictors ist dort gespeichert und wird zur Vorsage verwendet und aktualisiert.</li></ul></div>"
+    }
+  ],
+  "Storage (deck id 1753026077228)": [
+    {
+      "front": "Was sind Poling und Interrupts?",
+      "back": "<ul>\n<li><span style=\"font-weight: bold;\">Poling:</span></li>\n<ul>\n<li>Perdiodisch\n      I/O Status Register lesen</li>\n<li>Für kleine\n      Geräte nützlich, ansonsten schlecht für CPU Zeit</li>\n</ul>\n<li><span style=\"font-weight: bold;\">Interrupts:</span></li>\n<ul>\n<li>Controller\n      unterbricht die CPU mit Interrupt, sobald Gerät bereit ist oder Fehler\n      vorliegt&nbsp;</li>\n</ul></ul>"
+    },
+    {
+      "front": "Was beeinflusst die Performance einer Festplatte?",
+      "back": "Seek Time, Cache und Fragmentierung"
+    },
+    {
+      "front": "Was macht Raid?",
+      "back": "<ul>\n<li>Mehrere\n     Kleine Festplatten anstatt einer großen</li>\n<li>Parallelität\n     verbessert die Leistung</li>\n<li>Extra\n     Platten für redundante Datenspeicherung</li></ul>"
+    },
+    {
+      "front": "Wie funktionieren die verschiedenen Raid systeme?",
+      "back": "<ul><li><div><strong>RAID 1</strong>&nbsp;(\"Spiegel\")</div><ul><li><div>2 Platten, 1:1-Kopie</div></li><li><ul><li><div>Sicher, schnell lesen</div></li></ul></li><li><div>– Nur 50% Platz</div></li></ul></li><li><div><strong>RAID 2</strong></div><ul><li><div>Bits + ECC (veraltet)</div></li></ul></li><li><div><strong>RAID 3</strong></div><ul><li><div>Bytes + 1 Paritätsplatte</div></li><li><div>– Parität = Flaschenhals</div></li></ul></li><li><div><strong>RAID 5</strong></div><ul><li><div>Blöcke + rotierende Parität</div></li><li><ul><li><div>Guter Mix (Platz/Sicherheit)</div></li></ul></li><li><div>– Langsam schreiben</div></li></ul></li></ul>"
+    },
+    {
+      "front": "Woraus bestehen Festplatten?",
+      "back": "&nbsp;Platten -&gt; Tracks -&gt; Sektoren welche durch eine Partitionstabelle&nbsp; (MBR oder GPT) bestimmt wird"
+    }
+  ],
+  "Virtualisierung (deck id 1753027660763)": [
+    {
+      "front": "Nenne 3 eigenschaften der Interposition bei Virtualierung",
+      "back": "Kompression<br>Verschlüsselung<br>Profiling<br>Binary Translation<br>Sciherheit z.Z. Virenschutz<br>Debugging"
+    },
+    {
+      "front": "Erkläre folgendes Bild: paste-7fe26d1921e8f0da16e2292b27e262559eac7af4.jpg ",
+      "back": "<img src=\"paste-c9e78e9688befa7d0a947d47549167a95504b247.jpg\">"
+    },
+    {
+      "front": "Nenne 3 eigenschaften der Isolierung bei Virtualierung",
+      "back": "Fehlerisolierung<br>Versionierung zur vermeidung von DLL-Hell<br>Performance Isolierung"
+    },
+    {
+      "front": "Was ist der Virtual Machine Monitor?",
+      "back": "<div>Ein&nbsp;VMM&nbsp;ist eine Software/Hardware-Schicht, die mehrere virtuelle Maschinen (VMs) auf einer physischen Hardware steuert.</div><h3>Funktion:</h3><ul><li><div>Isoliert&nbsp;VMs voneinander (z. B. unterschiedliche Betriebssysteme auf einem Server).</div></li><li><div>Verteilt&nbsp;Hardware-Ressourcen (CPU, RAM) an VMs.</div></li><li><div>Erzwingt&nbsp;Sicherheitsregeln (kein direkter Zugriff auf physische Geräte).</div></li></ul>"
+    },
+    {
+      "front": "Nenne 3 eigenschaften der Datenkapselung bei Virtualierung",
+      "back": "<ul><li><div><strong>Sicherheit:</strong>&nbsp;Kein direkter Zugriff auf VM-internen Speicher.</div></li><li><div><strong>Flexibilität:</strong>&nbsp;VMs lassen sich pausieren/fortsetzen (z. B. via&nbsp;<code>virsh save</code>).</div></li><li><div><strong>Skalierung:</strong>&nbsp;Cloud-Dienste nutzen Kapselung für Massen-Hosting.</div></li></ul>"
+    },
+    {
+      "front": "Was ist ein Container?",
+      "back": "Ein&nbsp;<strong>Container</strong>&nbsp;ist eine&nbsp;<strong>isoliere Laufzeitumgebung</strong>, die eine Anwendung mit allen benötigten Abhängigkeiten (Bibliotheken, Konfiguration) verpackt."
+    },
+    {
+      "front": "Container vs VMs",
+      "back": "<ul><li><div><strong>Container</strong>&nbsp;= \"Lightweight-VM\" für Apps mit gleichem OS-Kernel.</div></li><li><div><strong>VM</strong>&nbsp;= \"Kompletter PC im PC\" für maximale Isolation.</div></li></ul>"
+    },
+    {
+      "front": "Nenne drei wichtige eigenschaften der Virualisierung mit erklärung.",
+      "back": "1. Isolierug<br><ul><li>Anwendungen laufen getrennt voneinander und können sich nicht gegenseitig beeinflussen</li></ul>2. Interposition<br><ul><li>Alle Operationen des Gastbetriebs laufen durch den Virtual Machine Monitor</li></ul>3. Datenkapselung<br><ul><li>Der Zustand der VM kann in einer Datei gespeichert werden</li></ul>"
+    },
+    {
+      "front": "Wo werden Virtuelle Maschinen eingesetzt?",
+      "back": "Cloud Computing: VMs ermöglichen die effiziente Bereitstellung von Ressourcen unter Wahrung der Isolierungsanforderungen (IaaS, PaaS, SaaS)"
+    }
+  ]
+}

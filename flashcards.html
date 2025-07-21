@@ -1,0 +1,799 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8" />
+<title>Flashcards Druckvorlage</title>
+<style>
+    @page {
+        size: A7 landscape;
+        margin: 5mm;
+    }
+    body {
+        font-family: Arial, sans-serif;
+        font-size: 9pt;
+        margin: 0;
+        padding: 0;
+    }
+    .flashcard {
+        width: 105mm;
+        height: 74mm;
+        box-sizing: border-box;
+        border: 1px solid #333;
+        padding: 5mm;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        page-break-after: always;
+    }
+    .flashcard.front {
+        justify-content: center;
+    }
+    h3 {
+        margin: 0 0 5px 0;
+        font-size: 11pt;
+        color: #111;
+        text-align: center;
+    }
+    .flashcard-content {
+        overflow-y: auto;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+    .flashcard.front .flashcard-content {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+    .flashcard-image {
+        max-width: 100%;
+        max-height: 50mm;
+        margin: 5px 0;
+    }
+    .flashcard-content img {
+        max-width: 100%;
+        max-height: 50mm;
+        margin: 5px 0;
+        object-fit: contain; /* optional: keep aspect ratio */
+    }
+    .flashcard:not(.front) .flashcard-content {
+        text-align: left;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    ul {
+        padding-left: 12px;
+        margin: 0 0 5px 0;
+    }
+    li {
+        margin-bottom: 2px;
+    }
+</style>
+</head>
+<body>
+
+            <div class="flashcard front">
+                <h3>Arithmetik</h3>
+                <div class="flashcard-content">Was sind die Sonderformate bei IEEE <img src="../../../../../../AppData/Roaming/Anki2/User 1/collection.media/paste-482d34e156054e8aaf771e7cb828079a163a6162.jpg" alt="paste-482d34e156054e8aaf771e7cb828079a163a6162.jpg" class="flashcard-image"/> </div>
+            </div>
+            
+            <div class="flashcard">
+                <h3>Arithmetik</h3>
+                <div class="flashcard-content"><img src="../../../../../../AppData/Roaming/Anki2/User 1/collection.media/paste-e546f6f9223c0060b86f427b68d057c2714a4f4c.jpg"></div>
+            </div>
+            
+            <div class="flashcard front">
+                <h3>Arithmetik</h3>
+                <div class="flashcard-content">Was ist die Vorzeichenbetrags schreibweise?</div>
+            </div>
+            
+            <div class="flashcard">
+                <h3>Arithmetik</h3>
+                <div class="flashcard-content">MSB 0 oder 1 gibt vorzeichen an</div>
+            </div>
+            
+            <div class="flashcard front">
+                <h3>Arithmetik</h3>
+                <div class="flashcard-content">Wie funktioniert die Zweierkomplementdarstellung?</div>
+            </div>
+            
+            <div class="flashcard">
+                <h3>Arithmetik</h3>
+                <div class="flashcard-content"><ul><li><div>Negative Zahlen werden durch Invertieren aller Bits und Addieren von&nbsp;<code>1</code>&nbsp;gebildet.</div></li></ul></div>
+            </div>
+            
+            <div class="flashcard front">
+                <h3>Cache</h3>
+                <div class="flashcard-content">Welche auswirkung hat die änderung der Cachegröße?</div>
+            </div>
+            
+            <div class="flashcard">
+                <h3>Cache</h3>
+                <div class="flashcard-content"><img src="../../../../../../AppData/Roaming/Anki2/User 1/collection.media/paste-52aa681805989637bef14a9adcb1fd4b62284933.jpg"></div>
+            </div>
+            
+            <div class="flashcard front">
+                <h3>Cache</h3>
+                <div class="flashcard-content">Welche auswirkung hat die änderung der Assozivität auf den Cache?</div>
+            </div>
+            
+            <div class="flashcard">
+                <h3>Cache</h3>
+                <div class="flashcard-content"><img src="../../../../../../AppData/Roaming/Anki2/User 1/collection.media/paste-aa60f5de04d6cc29d91f138c9ad5c49e1f0e3858.jpg"></div>
+            </div>
+            
+            <div class="flashcard front">
+                <h3>Cache</h3>
+                <div class="flashcard-content">Wie berechnet sich der Offset?</div>
+            </div>
+            
+            <div class="flashcard">
+                <h3>Cache</h3>
+                <div class="flashcard-content">Offset-Größe&nbsp;(Bits)=log2​(Blockgröße&nbsp;in&nbsp;Bytes)</div>
+            </div>
+            
+            <div class="flashcard front">
+                <h3>Cache</h3>
+                <div class="flashcard-content">Wie berechnet sich die gesamtgröße des Cache?</div>
+            </div>
+            
+            <div class="flashcard">
+                <h3>Cache</h3>
+                <div class="flashcard-content">Cache-Größe&nbsp;(Bytes)&nbsp;= Anzahl&nbsp;der&nbsp;Blöcke × Blockgröße&nbsp;(Bytes)<br>Anzahl&nbsp;der&nbsp;Blöcke = Anzahl&nbsp;der&nbsp;Sets × Assoziativität&nbsp;(Blöcke&nbsp;pro&nbsp;Set)</div>
+            </div>
+            
+            <div class="flashcard front">
+                <h3>Cache</h3>
+                <div class="flashcard-content">Wie funktioniert Write Through und wie kann man seine Probleme fixen?</div>
+            </div>
+            
+            <div class="flashcard">
+                <h3>Cache</h3>
+                <div class="flashcard-content">Speicher immer direkt mit aktualiseren<br>Aber Schreibzugriffe deswegen immer sehr langsam&nbsp;<br>-&gt; Write bufffer und erst schreiben wenn Write Buffer voll ist</div>
+            </div>
+            
+            <div class="flashcard front">
+                <h3>Cache</h3>
+                <div class="flashcard-content">Wie berechnet sich die Anzahl der Seitentabellen einträge bei Virtuellem Speicher?</div>
+            </div>
+            
+            <div class="flashcard">
+                <h3>Cache</h3>
+                <div class="flashcard-content">Anzahl&nbsp;PTEs = Virtueller&nbsp;Adressraum​ / Seitengröße&nbsp;=2^(Adressgröße−Offset-Bits)</div>
+            </div>
+            
+            <div class="flashcard front">
+                <h3>Cache</h3>
+                <div class="flashcard-content">Was ist der unterschied zwischen Cache Kohärenz und Konsistenz?</div>
+            </div>
+            
+            <div class="flashcard">
+                <h3>Cache</h3>
+                <div class="flashcard-content">Kohärenz:&nbsp;<em>Wann muss ein Wert aktualisiert/invalidiert werden?<br></em>Konsistenz:&nbsp;<em>In welcher Reihenfolge müssen Schreib-/Lesezugriffe sichtbar sein?</em></div>
+            </div>
+            
+            <div class="flashcard front">
+                <h3>Cache</h3>
+                <div class="flashcard-content">Wie berechnet sich der Index?</div>
+            </div>
+            
+            <div class="flashcard">
+                <h3>Cache</h3>
+                <div class="flashcard-content">log₂(Anzahl der Cache-Blöcke)</div>
+            </div>
+            
+            <div class="flashcard front">
+                <h3>Cache</h3>
+                <div class="flashcard-content">Wie funktioniert Write-Back?</div>
+            </div>
+            
+            <div class="flashcard">
+                <h3>Cache</h3>
+                <div class="flashcard-content">Speicher wird nur aktuallisiert wenn ein block mit dirty bit evicted wird. Dirty bit wird bei einem Cache write gesetzt. Benötigt verwaltungslogic aber ist schneller als write through.</div>
+            </div>
+            
+            <div class="flashcard front">
+                <h3>Cache</h3>
+                <div class="flashcard-content">Wie berechnet sich die Größe des virtuellen Adressraumes?</div>
+            </div>
+            
+            <div class="flashcard">
+                <h3>Cache</h3>
+                <div class="flashcard-content">Virtueller&nbsp;Adressraum&nbsp;(Bytes)=2^Adressgröße(bits)</div>
+            </div>
+            
+            <div class="flashcard front">
+                <h3>Cache</h3>
+                <div class="flashcard-content">Wie berechnet sich die größe einer Seitentabelle?</div>
+            </div>
+            
+            <div class="flashcard">
+                <h3>Cache</h3>
+                <div class="flashcard-content">Seitentabellen-Größe&nbsp;(Bytes)=Anzahl&nbsp;Einträge × Größe Einträge</div>
+            </div>
+            
+            <div class="flashcard front">
+                <h3>Cache</h3>
+                <div class="flashcard-content">Welche auswirkung hat die änderung der Blockgröße?</div>
+            </div>
+            
+            <div class="flashcard">
+                <h3>Cache</h3>
+                <div class="flashcard-content"><img src="../../../../../../AppData/Roaming/Anki2/User 1/collection.media/paste-dd1a2a0dd7a347c2eed2eae5dc44051c5f5f2693.jpg"></div>
+            </div>
+            
+            <div class="flashcard front">
+                <h3>Cache</h3>
+                <div class="flashcard-content">Was für Kohärenz Protokolle gibt es ud was machen diese?</div>
+            </div>
+            
+            <div class="flashcard">
+                <h3>Cache</h3>
+                <div class="flashcard-content">Snooping Protokolle: Alle Caches "lauschen" auf Bus-Transaktionen.<br>Verzeichisbasiert: Zentrale Tabelle ("Directory") trackt Cache-Zustände.</div>
+            </div>
+            
+            <div class="flashcard front">
+                <h3>Cache</h3>
+                <div class="flashcard-content">Was sind Synchronisatiosnprotokolle bei Kohärenz und was machen diese?</div>
+            </div>
+            
+            <div class="flashcard">
+                <h3>Cache</h3>
+                <div class="flashcard-content">Write Invalidate:<br><ul><li><div>Wenn ein Kern in eine gemeinsame Speicheradresse schreibt, werden&nbsp;<strong>alle anderen Cache-Kopien invalidiert</strong>.</div></li><li><div>Andere Kerne müssen bei ihrem nächsten Lesezugriff die&nbsp;<strong>aktualisierten Daten neu anfordern</strong>.</div></li></ul>Write Update/Broadcast:&nbsp;<br><ul><li><div>Bei einem Schreibzugriff wird der&nbsp;<strong>neue Wert an alle anderen Caches gesendet</strong>.</div></li><li><div>Diese&nbsp;<strong>aktualisieren ihre Kopien sofort</strong>.</div></li></ul></div>
+            </div>
+            
+            <div class="flashcard front">
+                <h3>Formeln</h3>
+                <div class="flashcard-content">Formel Leistung</div>
+            </div>
+            
+            <div class="flashcard">
+                <h3>Formeln</h3>
+                <div class="flashcard-content">Durchsatz<br><ul><li><img src="../../../../../../AppData/Roaming/Anki2/User 1/collection.media/paste-31612544070a73612f9618d14b5ebe760f8695e2.png"></li></ul>X ist n mal schneller als z<br><ul><li><img src="../../../../../../AppData/Roaming/Anki2/User 1/collection.media/paste-4341b52475487a5b4592db87f443f234795f6414.png"><br></li></ul></div>
+            </div>
+            
+            <div class="flashcard front">
+                <h3>Formeln</h3>
+                <div class="flashcard-content">Amdahls Gesetz</div>
+            </div>
+            
+            <div class="flashcard">
+                <h3>Formeln</h3>
+                <div class="flashcard-content">
+<div>
+<div>
+<ul><li><img src="../../../../../../AppData/Roaming/Anki2/User 1/collection.media/paste-b6e2ac8ac294fb99daeb244fdc55ff722445498d.png"></li>
+</ul>
+<div>&nbsp;&nbsp;&nbsp;&nbsp; F = Anteil des
+Programmes</div>
+</div>
+</div></div>
+            </div>
+            
+            <div class="flashcard front">
+                <h3>Formeln</h3>
+                <div class="flashcard-content">Pipeline Speedup</div>
+            </div>
+            
+            <div class="flashcard">
+                <h3>Formeln</h3>
+                <div class="flashcard-content">
+<div>
+<div><div><img src="../../../../../../AppData/Roaming/Anki2/User 1/collection.media/paste-7b1362ab26cdf54800d33f8af8afb80a7529830f.png"></div></div>
+</div></div>
+            </div>
+            
+            <div class="flashcard front">
+                <h3>Formeln</h3>
+                <div class="flashcard-content">Formel CPU-Zeit</div>
+            </div>
+            
+            <div class="flashcard">
+                <h3>Formeln</h3>
+                <div class="flashcard-content"><div><div><span style="font-weight:bold">CPU-Zeit:</span></div><ul><li>Vergangene Zeit</li><li><img src="../../../../../../AppData/Roaming/Anki2/User 1/collection.media/paste-b28696c03e7c11183e34556ca98125c3ed096d1a.png"></li><li><img src="../../../../../../AppData/Roaming/Anki2/User 1/collection.media/paste-5dbad43fd747e8c9c4be96baf95a1c202e8e600e.png"></li><li><img src="../../../../../../AppData/Roaming/Anki2/User 1/collection.media/paste-b9481aee4a13a804708d2667cf58e84599dcb228.png"></li></ul></div></div>
+            </div>
+            
+            <div class="flashcard front">
+                <h3>Formeln</h3>
+                <div class="flashcard-content">Speedup Amdahls Gesetz</div>
+            </div>
+            
+            <div class="flashcard">
+                <h3>Formeln</h3>
+                <div class="flashcard-content"><ul>
+<li><img src="../../../../../../AppData/Roaming/Anki2/User 1/collection.media/paste-7f166079fc08fc0c3becad43339a6fe1fcf1969e.png"></li>
+</ul>
+<div>&nbsp;&nbsp;&nbsp;&nbsp; F = Anteil des
+Programmes</div></div>
+            </div>
+            
+            <div class="flashcard front">
+                <h3>Formeln</h3>
+                <div class="flashcard-content">Formel CPI</div>
+            </div>
+            
+            <div class="flashcard">
+                <h3>Formeln</h3>
+                <div class="flashcard-content"><div>Cycles per Instruction</div><ul><li><img src="../../../../../../AppData/Roaming/Anki2/User 1/collection.media/paste-9142f4cda9dcccd4687b294ca112de3b56efcac7.png"></li></ul></div>
+            </div>
+            
+            <div class="flashcard front">
+                <h3>Formeln</h3>
+                <div class="flashcard-content">Formel Memory stall cycles</div>
+            </div>
+            
+            <div class="flashcard">
+                <h3>Formeln</h3>
+                <div class="flashcard-content"><img src="../../../../../../AppData/Roaming/Anki2/User 1/collection.media/paste-e1eeb5a5f379957f365c79fc17a439efb0d788af.jpg"></div>
+            </div>
+            
+            <div class="flashcard front">
+                <h3>Formeln</h3>
+                <div class="flashcard-content">AMAT</div>
+            </div>
+            
+            <div class="flashcard">
+                <h3>Formeln</h3>
+                <div class="flashcard-content"><div>AMAT = Hit&nbsp;Rate * Hit Time + Miss rate * Miss penalty</div></div>
+            </div>
+            
+            <div class="flashcard front">
+                <h3>Formeln</h3>
+                <div class="flashcard-content">Anzahl CPU Taktzyklen</div>
+            </div>
+            
+            <div class="flashcard">
+                <h3>Formeln</h3>
+                <div class="flashcard-content"><div><img src="../../../../../../AppData/Roaming/Anki2/User 1/collection.media/paste-fa691d4145854c1b97e63bc0ba7afe11292358d4.png"></div></div>
+            </div>
+            
+            <div class="flashcard front">
+                <h3>Formeln</h3>
+                <div class="flashcard-content">MTBF</div>
+            </div>
+            
+            <div class="flashcard">
+                <h3>Formeln</h3>
+                <div class="flashcard-content"><div>MTBF = MTTF + MTTR</div></div>
+            </div>
+            
+            <div class="flashcard front">
+                <h3>Formeln</h3>
+                <div class="flashcard-content">Verfügbarkeit </div>
+            </div>
+            
+            <div class="flashcard">
+                <h3>Formeln</h3>
+                <div class="flashcard-content"><div>MTTF/(MTTF+MTTR)</div></div>
+            </div>
+            
+            <div class="flashcard front">
+                <h3>Formeln</h3>
+                <div class="flashcard-content">Anual Failure Rate</div>
+            </div>
+            
+            <div class="flashcard">
+                <h3>Formeln</h3>
+                <div class="flashcard-content"><img src="../../../../../../AppData/Roaming/Anki2/User 1/collection.media/paste-cb483250dee1bf186a71eb498b95633484584865.jpg"></div>
+            </div>
+            
+            <div class="flashcard front">
+                <h3>Generel</h3>
+                <div class="flashcard-content">Was versteht man unter Kontrollpfad</div>
+            </div>
+            
+            <div class="flashcard">
+                <h3>Generel</h3>
+                <div class="flashcard-content">Kontrolliert den Datenpfad und gibt an, wann was gemacht wird.</div>
+            </div>
+            
+            <div class="flashcard front">
+                <h3>Generel</h3>
+                <div class="flashcard-content">Was besagt Moores law</div>
+            </div>
+            
+            <div class="flashcard">
+                <h3>Generel</h3>
+                <div class="flashcard-content"><ul>
+<li>Anzahl der<span style="font-weight: bold;">
+     Transistoren pro Chips</span> verdoppelt sich ca. alle 18 Monate </li>
+<li>-&gt;
+     Logaritmischer Wachstum </li>
+<li>Gilt
+     immernoch (Nicht verwechseln mit Leistungswachstum)</li></ul></div>
+            </div>
+            
+            <div class="flashcard front">
+                <h3>Generel</h3>
+                <div class="flashcard-content">Was versteht man unter der Powerwall?</div>
+            </div>
+            
+            <div class="flashcard">
+                <h3>Generel</h3>
+                <div class="flashcard-content"><ul>
+<li>Mit höherer Taktfrequence wird die Wärmedichte immer
+     höher</li>
+<li>-&gt; Mehr Kühlung benötigt</li>
+<li>Blockiert die erhöhung der Taktfrequenz</li>
+<li>-&gt; Lösung: Multiprozessoren</li></ul></div>
+            </div>
+            
+            <div class="flashcard front">
+                <h3>Generel</h3>
+                <div class="flashcard-content">Was besagt Amdahls Gesetz?</div>
+            </div>
+            
+            <div class="flashcard">
+                <h3>Generel</h3>
+                <div class="flashcard-content"><ul><li>Manerwartet proportionale Verbesserung der Gesamtleistung bei Verbesserung<br>     eines Computeraspektes</li><ul><li>Verbesserung wird nur dort spürbar wo sie angewendet wird → Make the common case fast</li></ul><li>Gesamtleistung ist immer von unveränderten Teil begrenzt</li></ul></div>
+            </div>
+            
+            <div class="flashcard front">
+                <h3>Generel</h3>
+                <div class="flashcard-content">Was versteht man unter Datenpfad</div>
+            </div>
+            
+            <div class="flashcard">
+                <h3>Generel</h3>
+                <div class="flashcard-content">Die Strecke über die in der Hardware benötigten Bausteine</div>
+            </div>
+            
+            <div class="flashcard front">
+                <h3>Generel</h3>
+                <div class="flashcard-content">Was versteht man unter kritischer Pfad</div>
+            </div>
+            
+            <div class="flashcard">
+                <h3>Generel</h3>
+                <div class="flashcard-content">Der kritische Pfad ist die längste Abfolge an vorgängen. DIese bestimmt die maximale Taktfrequenz.</div>
+            </div>
+            
+            <div class="flashcard front">
+                <h3>Mips</h3>
+                <div class="flashcard-content">Wie ist das R-Format aufgebaut mit nutzen und erklärung</div>
+            </div>
+            
+            <div class="flashcard">
+                <h3>Mips</h3>
+                <div class="flashcard-content">Für Register
+     befehle<br><img src="../../../../../../AppData/Roaming/Anki2/User 1/collection.media/paste-1714d21d3b43e82b1c7d7f7070900855a4e68184.png"><br><br><ul>
+<li>Op =
+     operation code (R-Format, S-Format…)</li>
+<li>Rs = first
+     source Register</li>
+<li>Rt = second
+     source Register</li>
+<li>Rd =
+     Destiation register</li>
+<li>Shamt =
+     shift amount (sll, srl)</li>
+<li>Funct =
+     function code (add, sub…)</li>
+<li>Immediate =
+     Zahlwert</li></ul></div>
+            </div>
+            
+            <div class="flashcard front">
+                <h3>Mips</h3>
+                <div class="flashcard-content">Was sind die drei Adressierungsformate in der Mips?</div>
+            </div>
+            
+            <div class="flashcard">
+                <h3>Mips</h3>
+                <div class="flashcard-content">R-Format<br>I-Format<br>Pseudo direkte Sprungadressierung</div>
+            </div>
+            
+            <div class="flashcard front">
+                <h3>Mips</h3>
+                <div class="flashcard-content">Wie ist das I-Format aufgebaut mit nutzen und erklärung?</div>
+            </div>
+            
+            <div class="flashcard">
+                <h3>Mips</h3>
+                <div class="flashcard-content"><ul><li>Für Immediate und branch befehle</li><li><div><img src="../../../../../../AppData/Roaming/Anki2/User 1/collection.media/paste-645fbe3611f0c2c26d67017ba5c9199d166a7be3.jpg"><br></div></li><li>Für PC relative Jumps (PC = PC + Immediate * 4)</li></ul></div>
+            </div>
+            
+            <div class="flashcard front">
+                <h3>Mips</h3>
+                <div class="flashcard-content">Wie ist die Pseudo direkte Sprungadressierung aufgebaut mit nutzen und erklärung?</div>
+            </div>
+            
+            <div class="flashcard">
+                <h3>Mips</h3>
+                <div class="flashcard-content"><ul>
+<li>Springe zu
+     einer bestimmten addresse</li>
+<li>Wird für J
+     und Jal benutzt</li>
+<li><img src="../../../../../../AppData/Roaming/Anki2/User 1/collection.media/paste-b54a0ef17bb9ae81230a9185977815cde1fffd68.png"></li>
+<li>PC = address
+     * 4</li></ul></div>
+            </div>
+            
+            <div class="flashcard front">
+                <h3>Mips</h3>
+                <div class="flashcard-content">Was sind die vier Entwurfsprinzipien einer ISA mit erklärung?</div>
+            </div>
+            
+            <div class="flashcard">
+                <h3>Mips</h3>
+                <div class="flashcard-content"><span style="font-weight: bold;">Einfachheit begünstigt
+     Regelmäßigkeit<br></span>&nbsp; &nbsp;&nbsp;- Regelmäßigkeit
+      macht Implementierung einfacher<br>&nbsp; &nbsp;&nbsp;- Einfachheit
+      ermöglicht höhere CPU Leistung<br>
+<span style="font-weight: bold;">Kleiner ist schneller<br></span>&nbsp; &nbsp;&nbsp;- Weniger
+      suchzeit bei kleinen Speichern -&gt; kleiner Register/Cache<br><span style="font-weight: bold;">Make common case fast<br></span>&nbsp; &nbsp;&nbsp;- Kleine
+      Konstanten sind häufig<br>&nbsp; &nbsp;&nbsp;- Immediate
+      Befehle erlauben load zu vermeiden<br><span style="font-weight: bold;">Good design demands good compromises<br></span>&nbsp; &nbsp; - Verschiedene
+      Formate komplizieren Decodierung aber erlauben überall 32 bit Befehle<ol><ul>
+</ul></ol></div>
+            </div>
+            
+            <div class="flashcard front">
+                <h3>Multiprozessoren</h3>
+                <div class="flashcard-content">Was ist mit starker und schwacher Skalierung gemeint und wodurch sind diese begrenzt (mit formel)?</div>
+            </div>
+            
+            <div class="flashcard">
+                <h3>Multiprozessoren</h3>
+                <div class="flashcard-content"><strong>1. Starke Skalierung (Strong Scaling)</strong><ul><li><div><em>Wie schnell löst man ein&nbsp;<strong>festes Problem</strong>, wenn man mehr Prozessoren/Kerne hinzufügt?</em></div></li><li><div><div><b>Grenzen</b>:&nbsp;Kommunikations-Overhead, Amdahls Gesetz.</div></div></li><li>Speedup = T<sub>1</sub>/T<sub>N&nbsp;</sub></li><li>T<sub>1</sub>​&nbsp;= Zeit auf 1 Kern,&nbsp;T<sub>N&nbsp;</sub>= Zeit auf&nbsp;N&nbsp;Kernen</li></ul><div><strong>2. Schwache Skalierung (Weak Scaling)</strong><ul><li><div><em>Wie viel größeres Problem kann man lösen, wenn man mehr Prozessoren/Kerne hinzufügt?</em></div></li><li><div><strong>Grenzen:</strong>&nbsp;Speicherbandbreite, Lastverteilung.</div></li><li>Effizienz = Problemgröße&nbsp;pro&nbsp;Kern / Gesamtzeit<br></li></ul></div></div>
+            </div>
+            
+            <div class="flashcard front">
+                <h3>Multiprozessoren</h3>
+                <div class="flashcard-content">Was ist Summenreduktion und wie funnktioniert diese?</div>
+            </div>
+            
+            <div class="flashcard">
+                <h3>Multiprozessoren</h3>
+                <div class="flashcard-content">Ein Algorithmus, um eine&nbsp;Summe von Werten&nbsp;in einem Array parallel (z. B. auf GPU/CPU) effizient zu berechnen. <br>Dafür benötigt man einen SMP (Shared Memory multiprocessor)<br>Hier werden z.B. immer zweierpaare an werten Addiert und danach wieder das selbe, bis nurnoch ein wert übrig ist<br><img src="../../../../../../AppData/Roaming/Anki2/User 1/collection.media/paste-acbdbbac56812aa9778174abe72029c21ee0a26d.jpg"></div>
+            </div>
+            
+            <div class="flashcard front">
+                <h3>Pipeline</h3>
+                <div class="flashcard-content">Welche formate benutzen welche Teile der Pipeline?</div>
+            </div>
+            
+            <div class="flashcard">
+                <h3>Pipeline</h3>
+                <div class="flashcard-content">R-Format: IF ID(2 registerwerte lesen) EX(ALU) WB(Ergebnis schreiben)<br>I-Format: IF ID(registerwert lesen) EX(Adresse aus 16-bit Offset berechnen) MEM(load oder store) WB(nur bei load)<br>J-Format: IF ID(registerwerte lesen) EX(vergleich bei branch und zieladresse berechnen)&nbsp;&nbsp;</div>
+            </div>
+            
+            <div class="flashcard front">
+                <h3>Pipeline</h3>
+                <div class="flashcard-content">Was sind die Pipeline schritte in der Mips?</div>
+            </div>
+            
+            <div class="flashcard">
+                <h3>Pipeline</h3>
+                <div class="flashcard-content"><ol>
+<li><span style="font-weight: bold;">IF</span>: Instruction Fetch vom Speicher</li>
+<li><span style="font-weight: bold;">ID</span>:
+     Instruction Decode &amp; Register lesen</li>
+<li><span style="font-weight: bold;">EX</span>:
+     Execute Befehl ausführen oder Adresse ausrechnen</li>
+<li><span style="font-weight: bold;">MEM</span>:
+     Zufriffe auf den Speicheroperanden</li>
+<li><span style="font-weight: bold;">WB</span>:
+     Write back (Ergebnis in Register schreiben)</li></ol></div>
+            </div>
+            
+            <div class="flashcard front">
+                <h3>Pipeline</h3>
+                <div class="flashcard-content">Was gibt es für Pipeline Konflikte und wie kann man diese lösen?</div>
+            </div>
+            
+            <div class="flashcard">
+                <h3>Pipeline</h3>
+                <div class="flashcard-content">1. Strukturkonflikt (Eine
+benötigte Ressource ist belegt)<br><div><ul><li>-&gt; Datenpfade mit Pipelining erfordern
+getrennte Befehls- und Datenspeicher</li></ul></div>2. Datenkonflikt (Müssen warte, das vorherige Befehle das
+Lesen/Schreiben von Daten abschliesst)<br><ul><li><div>-&gt; Forwarding, bei Load-Use mit stall oder code scheduling</div></li></ul><div>3. Steuerkonflikt (Steuerentscheidung hängt vom vorherigen
+Befehl ab)</div><div><ul><li>-&gt; Delayed branch slot, branch prediction</li></ul></div></div>
+            </div>
+            
+            <div class="flashcard front">
+                <h3>Pipeline</h3>
+                <div class="flashcard-content">Was ist der unterschied zwischen Statischer und dynamischer branch prediction?</div>
+            </div>
+            
+            <div class="flashcard">
+                <h3>Pipeline</h3>
+                <div class="flashcard-content"><ul>
+<li><span style="font-weight: bold;">Statische Sprungvorhersage:</span></li>
+<ul>
+<li>Basierend
+      auf typischem Sprungverhalten (Festgelegte Regeln)</li>
+</ul>
+<li><span style="font-weight: bold;">Dynamische Sprungvorhersage:</span></li>
+<ul>
+<li>Hardware
+      misst tatsächliches Sprungverhalten (z.B. durch speichern der letzten
+      Sprünge für jeden Branch)</li>
+<li>-&gt;
+      Annahme: Zukünftiges Verhalten setzt Trend fort</li>
+<li>Wenn
+      falsch, stall während erneuten Befehlsladens und Aktualisierung der
+      Branch history table</li>
+</ul></ul></div>
+            </div>
+            
+            <div class="flashcard front">
+                <h3>Pipeline</h3>
+                <div class="flashcard-content">Wozu dient die in Prozessoren Sprungvorhersage und warum wurde sie entwickelt? Erklären Sie die zwei grundlegenden Alternativen Sprungvorhersage zu realisieren. Erklären Sie im Detail was in beiden Alternativen bei einem Sprungbefehl passiert und welche Prozessorressourcen dafür benötigt werden.</div>
+            </div>
+            
+            <div class="flashcard">
+                <h3>Pipeline</h3>
+                <div class="flashcard-content"><div>Die Sprungvorhersage trifft eine Vorhersage ob ein Sprung genommen wird oder nicht genommen wird.</div><div><ul><li>(1) Sie dient dazu, Pipelineverzögerungen zu vermeiden die entstehen, wenn der nächste Befehl nicht zum Dekodieren bereit steht – der Grund, weshalb sie entwickelt wurde.</li><li>(2) Bei der statischen Vorhersage wird immer eine Richtung gewählt, z.b. für back brahöhes ein taken für forward branches ein not-taken. Es ist dazu keine weitere Ressource benötigt, da der Compiler (oder Assemblerprogrammierer) ein Vorhersagbit setzt.</li><li>(2) Bei der dynamischen Vorhersage wird die Befehlsadresse als Index in eine Branch History Table verwendet. Der Zustand des 1 Bit oder 2 Bit oder komplizierteren Predictors ist dort gespeichert und wird zur Vorsage verwendet und aktualisiert.</li></ul></div></div>
+            </div>
+            
+            <div class="flashcard front">
+                <h3>Storage</h3>
+                <div class="flashcard-content">Was sind Poling und Interrupts?</div>
+            </div>
+            
+            <div class="flashcard">
+                <h3>Storage</h3>
+                <div class="flashcard-content"><ul>
+<li><span style="font-weight: bold;">Poling:</span></li>
+<ul>
+<li>Perdiodisch
+      I/O Status Register lesen</li>
+<li>Für kleine
+      Geräte nützlich, ansonsten schlecht für CPU Zeit</li>
+</ul>
+<li><span style="font-weight: bold;">Interrupts:</span></li>
+<ul>
+<li>Controller
+      unterbricht die CPU mit Interrupt, sobald Gerät bereit ist oder Fehler
+      vorliegt&nbsp;</li>
+</ul></ul></div>
+            </div>
+            
+            <div class="flashcard front">
+                <h3>Storage</h3>
+                <div class="flashcard-content">Was beeinflusst die Performance einer Festplatte?</div>
+            </div>
+            
+            <div class="flashcard">
+                <h3>Storage</h3>
+                <div class="flashcard-content">Seek Time, Cache und Fragmentierung</div>
+            </div>
+            
+            <div class="flashcard front">
+                <h3>Storage</h3>
+                <div class="flashcard-content">Was macht Raid?</div>
+            </div>
+            
+            <div class="flashcard">
+                <h3>Storage</h3>
+                <div class="flashcard-content"><ul>
+<li>Mehrere
+     Kleine Festplatten anstatt einer großen</li>
+<li>Parallelität
+     verbessert die Leistung</li>
+<li>Extra
+     Platten für redundante Datenspeicherung</li></ul></div>
+            </div>
+            
+            <div class="flashcard front">
+                <h3>Storage</h3>
+                <div class="flashcard-content">Wie funktionieren die verschiedenen Raid systeme?</div>
+            </div>
+            
+            <div class="flashcard">
+                <h3>Storage</h3>
+                <div class="flashcard-content"><ul><li><div><strong>RAID 1</strong>&nbsp;("Spiegel")</div><ul><li><div>2 Platten, 1:1-Kopie</div></li><li><ul><li><div>Sicher, schnell lesen</div></li></ul></li><li><div>– Nur 50% Platz</div></li></ul></li><li><div><strong>RAID 2</strong></div><ul><li><div>Bits + ECC (veraltet)</div></li></ul></li><li><div><strong>RAID 3</strong></div><ul><li><div>Bytes + 1 Paritätsplatte</div></li><li><div>– Parität = Flaschenhals</div></li></ul></li><li><div><strong>RAID 5</strong></div><ul><li><div>Blöcke + rotierende Parität</div></li><li><ul><li><div>Guter Mix (Platz/Sicherheit)</div></li></ul></li><li><div>– Langsam schreiben</div></li></ul></li></ul></div>
+            </div>
+            
+            <div class="flashcard front">
+                <h3>Storage</h3>
+                <div class="flashcard-content">Woraus bestehen Festplatten?</div>
+            </div>
+            
+            <div class="flashcard">
+                <h3>Storage</h3>
+                <div class="flashcard-content">&nbsp;Platten -&gt; Tracks -&gt; Sektoren welche durch eine Partitionstabelle&nbsp; (MBR oder GPT) bestimmt wird</div>
+            </div>
+            
+            <div class="flashcard front">
+                <h3>Virtualisierung</h3>
+                <div class="flashcard-content">Nenne 3 eigenschaften der Interposition bei Virtualierung</div>
+            </div>
+            
+            <div class="flashcard">
+                <h3>Virtualisierung</h3>
+                <div class="flashcard-content">Kompression<br>Verschlüsselung<br>Profiling<br>Binary Translation<br>Sciherheit z.Z. Virenschutz<br>Debugging</div>
+            </div>
+            
+            <div class="flashcard front">
+                <h3>Virtualisierung</h3>
+                <div class="flashcard-content">Erkläre folgendes Bild: <img src="../../../../../../AppData/Roaming/Anki2/User 1/collection.media/paste-7fe26d1921e8f0da16e2292b27e262559eac7af4.jpg" alt="paste-7fe26d1921e8f0da16e2292b27e262559eac7af4.jpg" class="flashcard-image"/> </div>
+            </div>
+            
+            <div class="flashcard">
+                <h3>Virtualisierung</h3>
+                <div class="flashcard-content"><img src="../../../../../../AppData/Roaming/Anki2/User 1/collection.media/paste-c9e78e9688befa7d0a947d47549167a95504b247.jpg"></div>
+            </div>
+            
+            <div class="flashcard front">
+                <h3>Virtualisierung</h3>
+                <div class="flashcard-content">Nenne 3 eigenschaften der Isolierung bei Virtualierung</div>
+            </div>
+            
+            <div class="flashcard">
+                <h3>Virtualisierung</h3>
+                <div class="flashcard-content">Fehlerisolierung<br>Versionierung zur vermeidung von DLL-Hell<br>Performance Isolierung</div>
+            </div>
+            
+            <div class="flashcard front">
+                <h3>Virtualisierung</h3>
+                <div class="flashcard-content">Was ist der Virtual Machine Monitor?</div>
+            </div>
+            
+            <div class="flashcard">
+                <h3>Virtualisierung</h3>
+                <div class="flashcard-content"><div>Ein&nbsp;VMM&nbsp;ist eine Software/Hardware-Schicht, die mehrere virtuelle Maschinen (VMs) auf einer physischen Hardware steuert.</div><h3>Funktion:</h3><ul><li><div>Isoliert&nbsp;VMs voneinander (z. B. unterschiedliche Betriebssysteme auf einem Server).</div></li><li><div>Verteilt&nbsp;Hardware-Ressourcen (CPU, RAM) an VMs.</div></li><li><div>Erzwingt&nbsp;Sicherheitsregeln (kein direkter Zugriff auf physische Geräte).</div></li></ul></div>
+            </div>
+            
+            <div class="flashcard front">
+                <h3>Virtualisierung</h3>
+                <div class="flashcard-content">Nenne 3 eigenschaften der Datenkapselung bei Virtualierung</div>
+            </div>
+            
+            <div class="flashcard">
+                <h3>Virtualisierung</h3>
+                <div class="flashcard-content"><ul><li><div><strong>Sicherheit:</strong>&nbsp;Kein direkter Zugriff auf VM-internen Speicher.</div></li><li><div><strong>Flexibilität:</strong>&nbsp;VMs lassen sich pausieren/fortsetzen (z. B. via&nbsp;<code>virsh save</code>).</div></li><li><div><strong>Skalierung:</strong>&nbsp;Cloud-Dienste nutzen Kapselung für Massen-Hosting.</div></li></ul></div>
+            </div>
+            
+            <div class="flashcard front">
+                <h3>Virtualisierung</h3>
+                <div class="flashcard-content">Was ist ein Container?</div>
+            </div>
+            
+            <div class="flashcard">
+                <h3>Virtualisierung</h3>
+                <div class="flashcard-content">Ein&nbsp;<strong>Container</strong>&nbsp;ist eine&nbsp;<strong>isoliere Laufzeitumgebung</strong>, die eine Anwendung mit allen benötigten Abhängigkeiten (Bibliotheken, Konfiguration) verpackt.</div>
+            </div>
+            
+            <div class="flashcard front">
+                <h3>Virtualisierung</h3>
+                <div class="flashcard-content">Container vs VMs</div>
+            </div>
+            
+            <div class="flashcard">
+                <h3>Virtualisierung</h3>
+                <div class="flashcard-content"><ul><li><div><strong>Container</strong>&nbsp;= "Lightweight-VM" für Apps mit gleichem OS-Kernel.</div></li><li><div><strong>VM</strong>&nbsp;= "Kompletter PC im PC" für maximale Isolation.</div></li></ul></div>
+            </div>
+            
+            <div class="flashcard front">
+                <h3>Virtualisierung</h3>
+                <div class="flashcard-content">Nenne drei wichtige eigenschaften der Virualisierung mit erklärung.</div>
+            </div>
+            
+            <div class="flashcard">
+                <h3>Virtualisierung</h3>
+                <div class="flashcard-content">1. Isolierug<br><ul><li>Anwendungen laufen getrennt voneinander und können sich nicht gegenseitig beeinflussen</li></ul>2. Interposition<br><ul><li>Alle Operationen des Gastbetriebs laufen durch den Virtual Machine Monitor</li></ul>3. Datenkapselung<br><ul><li>Der Zustand der VM kann in einer Datei gespeichert werden</li></ul></div>
+            </div>
+            
+            <div class="flashcard front">
+                <h3>Virtualisierung</h3>
+                <div class="flashcard-content">Wo werden Virtuelle Maschinen eingesetzt?</div>
+            </div>
+            
+            <div class="flashcard">
+                <h3>Virtualisierung</h3>
+                <div class="flashcard-content">Cloud Computing: VMs ermöglichen die effiziente Bereitstellung von Ressourcen unter Wahrung der Isolierungsanforderungen (IaaS, PaaS, SaaS)</div>
+            </div>
+            
+</body>
+</html>
